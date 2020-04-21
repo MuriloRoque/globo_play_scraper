@@ -41,6 +41,7 @@ PLATFORMS
 DEPENDENCIES
   nokogiri
   rubocop
+  selenium-webdriver
   watir
   webdrivers
 

@@ -16,4 +16,13 @@ class Movie
     results = parsed.css('.video-widget__title').text
     results
   end
+
+  def more
+    button = @browser.button(class: 'action-button__button')
+    hidden_div = @browser.div(class: 'action-button--hidden')
+    while hidden_div.exists? == false
+      button.click
+      sleep(2)
+    end
+  end
 end
