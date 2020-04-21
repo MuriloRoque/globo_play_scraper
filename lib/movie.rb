@@ -1,16 +1,18 @@
 require 'nokogiri'
-require 'httparty'
+require 'watir'
+require 'webdrivers/chromedriver'
 
 class Movie
-  attr_reader :link
+  attr_reader :key, :browser
 
-  def initialize
-    @link = 'https://globoplay.globo.com/busca/?q=the+big+bang+theory'
+  def initialize(key)
+    key.downcase!
+    @browser = Watir::Browser.new
+    @browser.goto "https://globoplay.globo.com/busca/?q=#{key}".sub(' ', '+')
   end
 
   def parsing
-    unparsed = HTTParty.get(@link)
-    parsed = Nokogiri::HTML(unparsed)
+    parsed = Nokogiri::HTML.parse(@browser.html)
     parsed
   end
 
