@@ -3,6 +3,9 @@ GEM
   specs:
     ast (2.4.0)
     jaro_winkler (1.5.4)
+    mini_portile2 (2.4.0)
+    nokogiri (1.10.9)
+      mini_portile2 (~> 2.4.0)
     parallel (1.19.1)
     parser (2.7.1.1)
       ast (~> 2.4.0)
@@ -23,6 +26,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  nokogiri
   rubocop
 
 BUNDLED WITH

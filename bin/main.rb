@@ -1,3 +1,3 @@
 #!/usr/bin/env ruby
-require 'lib/movie.rb'
-puts "Hello"
+require_relative '../lib/movie.rb'
+puts 'Hello'
