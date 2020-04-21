@@ -9,7 +9,8 @@ class Movie
   end
 
   def parsing
-    unparsed = HTTParty.get(@url)
+    unparsed = HTTParty.get(@link)
     parsed = Nokogiri::HTML(unparsed)
+    parsed
   end
 end

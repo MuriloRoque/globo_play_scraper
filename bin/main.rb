@@ -1,3 +1,4 @@
 #!/usr/bin/env ruby
 require_relative '../lib/movie.rb'
-puts 'Hello'
+movie = Movie.new
+puts movie.parsing
