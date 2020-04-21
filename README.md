@@ -1,1 +1,1 @@
-# Netflix-Scraper
+[![Run on Repl.it](https://repl.it/badge/github/MuriloRoque/Netflix-Scraper)](https://repl.it/github/MuriloRoque/Netflix-Scraper)
