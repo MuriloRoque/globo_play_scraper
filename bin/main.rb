@@ -1,8 +1,12 @@
 #!/usr/bin/env ruby
 require_relative '../lib/movie.rb'
 require_relative '../lib/webpage.rb'
-puts 'Please type your search keywords:'
+puts 'Please type your search keywords (> 3 characters):'
 key = gets.chomp
+until key.length >= 3
+  puts 'Please type your search keywords (> 3 characters):'
+  key = gets.chomp
+end
 movie = Movie.new(key)
 movie.more
 hash_results = movie.parsing
