@@ -1,5 +1,5 @@
 #!/usr/bin/env ruby
 require_relative '../lib/movie.rb'
-movie = Movie.new('The Big Bang Theory')
+movie = Movie.new('dwdydgasugabs')
 movie.more
 puts movie.parsing
