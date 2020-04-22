@@ -12,19 +12,19 @@ class Movie
   end
 
   def create_hash(obj)
-    obj.map { |movie|
+    obj.map do |movie|
       { title: movie.css('.video-widget__title').map(&:text),
         duration: movie.css('.video-widget__duration').map(&:text),
         date: movie.css('.video-exhibited-at').map(&:text),
         link: movie.xpath("//div[@class='final-content']/a/@href").map(&:text) }
-    }
+    end
   end
 
   def parsing
     parsed = Nokogiri::HTML.parse(@browser.html)
     results = parsed.css('.tiled-grid-widget')
-    creation = create_hash(results)
-    creation[0][:title]
+    creation = create_hash(results).pop
+    creation
   end
 
   def more
@@ -33,6 +33,7 @@ class Movie
     no_results = @browser.div(class: 'search-results-widget__no-results')
     while hidden_div.exists? == false
       break if no_results.exists?
+
       button.click
       sleep(2)
     end
