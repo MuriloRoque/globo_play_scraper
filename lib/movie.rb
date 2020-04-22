@@ -11,10 +11,20 @@ class Movie
     @browser.goto "https://globoplay.globo.com/busca/?q=#{key}".sub(' ', '+')
   end
 
+  def create_hash(obj)
+    obj.map { |movie|
+      { title: movie.css('.video-widget__title').map(&:text),
+        duration: movie.css('.video-widget__duration').map(&:text),
+        date: movie.css('.video-exhibited-at').map(&:text),
+        link: movie.xpath("//div[@class='final-content']/a/@href").map(&:text) }
+    }
+  end
+
   def parsing
     parsed = Nokogiri::HTML.parse(@browser.html)
-    results = parsed.css('.video-widget__title').text
-    results
+    results = parsed.css('.tiled-grid-widget')
+    creation = create_hash(results)
+    creation[0][:title]
   end
 
   def more
