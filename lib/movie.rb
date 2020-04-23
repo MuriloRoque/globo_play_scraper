@@ -3,9 +3,6 @@ require 'watir'
 require 'webdrivers'
 
 class Movie
-  attr_accessor :key
-  attr_writer :browser
-
   def initialize(key)
     key.downcase!
     @browser = Watir::Browser.new

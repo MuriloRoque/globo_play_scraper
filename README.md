@@ -46,6 +46,9 @@ Not avaiable at the moment, it will be in here a future feature.
 - In `/results` the App will create one directory for each keyword you search;
 - Enter any of these directories and open the .html file with a browser to see a list of results!
 
+**Note 1: The App might not work if you don't have a stable internet connection**
+**Note 2: The App only works if you have Google Chrome or Mozilla Firefox Installed**
+
 ## Author
 
 Murilo Roque Paiva da Silva
