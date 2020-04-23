@@ -53,4 +53,12 @@ describe Webpage do
       expect(webpage.generate_page_html).to be_a_kind_of(File)
     end
   end
+  describe '#generate_page_css' do
+    it 'returns error if argument is given' do
+      expect { webpage.generate_page_css(1) }.to raise_error(ArgumentError)
+    end
+    it 'returns a file type object' do
+      expect(webpage.generate_page_css).to be_a_kind_of(File)
+    end
+  end
 end
