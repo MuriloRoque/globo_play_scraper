@@ -1,6 +1,6 @@
 require 'nokogiri'
 require 'watir'
-require 'webdrivers/chromedriver'
+require 'webdrivers'
 
 class Movie
   attr_accessor :key

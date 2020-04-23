@@ -1,7 +1,8 @@
 require 'nokogiri'
 require 'watir'
-require 'webdrivers/chromedriver'
+require 'webdrivers'
 require './lib/movie.rb'
+require './lib/webpage.rb'
 describe Movie do
   movie = Movie.new('O bom doutor')
   inv_movie = Movie.new('fffdfafas')
