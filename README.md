@@ -13,7 +13,7 @@ In this project I:
 - Used the following gems: Nokogiri, Rubocop, Watir and Webdrivers;
 - Set up a code linter in the repository;
 - Used Github flow;
-- Used RSpec to make the test examples for class methods;
+- Used RSpec to make the test examples for class PUBLIC methods;
 - Created an effective Ruby code that solved my problem;
 - Applied Ruby coding best practices;
 - Implemented basic OOP principles;
