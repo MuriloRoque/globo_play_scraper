@@ -24,7 +24,7 @@ class Movie
 
     while hidden_div.exists? == false
       button.click
-      sleep(1)
+      sleep(5)
     end
   end
 
