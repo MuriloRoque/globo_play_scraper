@@ -8,8 +8,8 @@ until key.length >= 3
   key = gets.chomp
 end
 movie = Movie.new(key)
-movie.more
-if movie.more == false
+movie.more?
+if movie.more? == false
   puts 'No results!'
 else
   hash_results = movie.parsing

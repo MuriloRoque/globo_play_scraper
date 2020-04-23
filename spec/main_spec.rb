@@ -1,10 +1,10 @@
 require 'nokogiri'
 require 'watir'
 require 'webdrivers'
-require './lib/movie.rb'
-require './lib/webpage.rb'
+require_relative '../lib/movie.rb'
+require_relative '../lib/webpage.rb'
 describe Movie do
-  let(:movie) { Movie.new('O bom doutor') }
+  let(:movie) { Movie.new('good doctor') }
   let(:movie_no_res) { Movie.new('fffdfafas') }
   describe '#initialize' do
     it 'returns error if no argument is given' do
@@ -25,15 +25,15 @@ describe Movie do
       expect(movie_no_res.parsing).to be_nil
     end
   end
-  describe '#more' do
+  describe '#more?' do
     it 'returns error if argument is given' do
-      expect { movie.more(1) }.to raise_error(ArgumentError)
+      expect { movie.more?(1) }.to raise_error(ArgumentError)
     end
     it 'returns nil if the given key is valid' do
-      expect(movie.more).to be_nil
+      expect(movie.more?).to be_nil
     end
     it 'returns false if the given key is not valid' do
-      expect(movie_no_res.more).to be false
+      expect(movie_no_res.more?).to be false
     end
   end
 end

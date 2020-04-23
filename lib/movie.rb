@@ -16,7 +16,7 @@ class Movie
     creation
   end
 
-  def more
+  def more?
     button = @browser.button(class: 'action-button__button')
     number1 = @browser.span(class: 'results-title-widget__subtitle')
     hidden_div = @browser.div(class: 'action-button--hidden')

@@ -1,4 +1,4 @@
-[![hire-badge](https://img.shields.io/badge/Consult%20/%20Hire%20Murilo-Click%20to%20Contact-brightgreen)](mailto:muriloengqui@gmail.com) [![Twitter Follow](https://img.shields.io/twitter/follow/MuriloRoquePai1?label=Follow%20Murilo%20on%20Twitter&style=social)](https://twitter.com/MuriloRoquePai1)
+[![hire-badge](https://img.shields.io/badge/Consult%20/%20Hire%20Murilo-Click%20to%20Contact-brightgreen)](mailto:muriloengqui@gmail.com) [![Twitter Follow] (https://img.shields.io/twitter/follow/MuriloRoquePai1?label=Follow%20Murilo%20on%20Twitter&style=social)](https://twitter.com/MuriloRoquePai1)
 
 # Capstone Project - Globo Play Scraper
 
@@ -37,7 +37,8 @@ Not avaiable at the moment, it will be in here a future feature.
 
 - Clone the project to your local machine;
 - `cd` into the project directory;
-- Run `./bin/main.rb` in your terminal;
+- Run `bundle install` to install the necessary gems;
+- Run `bin/main.rb` in your terminal;
 - Type the keywords you want to search (e.g. "The Big Bang Theory");
 - Wait and watch the App running;
 - There are two possible outputs;
@@ -53,11 +54,11 @@ Not avaiable at the moment, it will be in here a future feature.
 
 Murilo Roque Paiva da Silva
 
-Github: @MuriloRoque
+Github: [@MuriloRoque](https://github.com/MuriloRoque)
 
-Twitter: @MuriloRoquePai1
+Twitter: [@MuriloRoquePai1](https://twitter.com/MuriloRoquePai1)
 
-Linkedin: https://www.linkedin.com/in/murilo-roque-b1268741/
+Linkedin: [MuriloRoque](https://www.linkedin.com/in/murilo-roque-b1268741/)
 
 ## 🤝 Contributing
 
