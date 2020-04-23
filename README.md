@@ -2,6 +2,10 @@
 
 # Capstone Project - Globo Play Scraper
 
+![App Demo](https://gph.is/g/Z8BB60k)
+
+First of all, you can find this project's requirements [here](https://www.notion.so/microverse/Build-your-own-scraper-f54eaca54d8a4d758a5f0141468127a8). The video presentation can be found [here](zoom).
+
 In this project I:
 
 - Used Ruby to implement a [Globo Play](https://globoplay.globo.com) search results scraper;
