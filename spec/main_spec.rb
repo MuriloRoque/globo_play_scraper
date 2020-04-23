@@ -4,8 +4,8 @@ require 'webdrivers'
 require './lib/movie.rb'
 require './lib/webpage.rb'
 describe Movie do
-  movie = Movie.new('O bom doutor')
-  movie_no_res = Movie.new('fffdfafas')
+  let(:movie) { Movie.new('O bom doutor') }
+  let(:movie_no_res) { Movie.new('fffdfafas') }
   describe '#initialize' do
     it 'returns error if no argument is given' do
       expect { Movie.new }.to raise_error(ArgumentError)
@@ -39,7 +39,7 @@ describe Movie do
 end
 
 describe Webpage do
-  webpage = Webpage.new('O bom doutor')
+  let(:webpage) { Webpage.new('O bom doutor') }
   describe '#initialize' do
     it 'returns error if no argument is given' do
       expect { Webpage.new }.to raise_error(ArgumentError)
