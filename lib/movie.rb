@@ -12,15 +12,6 @@ class Movie
     @browser.goto "https://globoplay.globo.com/busca/?q=#{key}".sub(' ', '+')
   end
 
-  def create_hash(obj)
-    obj.map do |movie|
-      { title: movie.css('.video-widget__title').map(&:text),
-        duration: movie.css('.video-widget__duration').map(&:text),
-        date: movie.css('.video-exhibited-at').map(&:text),
-        link: movie.xpath("//div[@class='final-content']/a/@href").map(&:text) }
-    end
-  end
-
   def parsing
     parsed = Nokogiri::HTML.parse(@browser.html)
     results = parsed.css('.tiled-grid-widget')
@@ -37,6 +28,17 @@ class Movie
     while hidden_div.exists? == false
       button.click
       sleep(1)
+    end
+  end
+
+  private
+
+  def create_hash(obj)
+    obj.map do |movie|
+      { title: movie.css('.video-widget__title').map(&:text),
+        duration: movie.css('.video-widget__duration').map(&:text),
+        date: movie.css('.video-exhibited-at').map(&:text),
+        link: movie.xpath("//div[@class='final-content']/a/@href").map(&:text) }
     end
   end
 end
