@@ -3,7 +3,8 @@ require 'watir'
 require 'webdrivers/chromedriver'
 
 class Movie
-  attr_reader :key, :browser
+  attr_accessor :key
+  attr_writer :browser
 
   def initialize(key)
     key.downcase!
@@ -31,11 +32,11 @@ class Movie
     button = @browser.button(class: 'action-button__button')
     number1 = @browser.span(class: 'results-title-widget__subtitle')
     hidden_div = @browser.div(class: 'action-button--hidden')
-    return nil if number1.exists? == false
+    return false if number1.exists? == false
 
     while hidden_div.exists? == false
       button.click
-      sleep(2)
+      sleep(1)
     end
   end
 end
