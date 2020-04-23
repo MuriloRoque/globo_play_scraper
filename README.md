@@ -4,7 +4,7 @@
 
 ![App Demo](https://media.giphy.com/media/dCAEuVRcjLFu6GmOby/giphy.gif)
 
-First of all, you can find this project's requirements [here](https://www.notion.so/microverse/Build-your-own-scraper-f54eaca54d8a4d758a5f0141468127a8). The video presentation can be found [here](zoom).
+First of all, you can find this project's requirements [here](https://www.notion.so/microverse/Build-your-own-scraper-f54eaca54d8a4d758a5f0141468127a8). The video presentation can be found [here](https://www.loom.com/share/ca341aae65164539919352f115204147).
 
 In this project I:
 
@@ -48,6 +48,7 @@ Not avaiable at the moment, it will be in here a future feature.
 - Enter any of these directories and open the .html file with a browser to see a list of results!
 
 **Note 1: The App might not work if you don't have a stable internet connection**
+
 **Note 2: The App only works if you have Google Chrome or Mozilla Firefox Installed**
 
 ## Author
